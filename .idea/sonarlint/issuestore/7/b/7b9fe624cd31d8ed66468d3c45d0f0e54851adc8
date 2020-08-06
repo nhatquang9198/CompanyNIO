@@ -1,0 +1,15 @@
+
+M
+java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8¿éšœ¼.
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8¿éšœ¼.
+H
+java:S1168"+Return an empty collection instead of null.(¥¹ï8şô›¼.
+R
+java:S1172"0Remove this unused method parameter "companies".(¾ÊÑÆùÿÿÿÿ8¾­ì›¼.
+\
+java:S1854":Remove this useless assignment to local variable "reader".(íµæ›øÿÿÿÿ8ÊÁû›¼.
+J
+java:S1068"-Remove this unused "companies" private field.(÷ÕÒ8’í›¼.
+M
+java:S1481"+Remove this unused "reader" local variable.(íµæ›øÿÿÿÿ8ÊÁû›¼.
