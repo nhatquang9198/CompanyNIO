@@ -9,3 +9,13 @@ Y
 )src/main/java/service/CompanyService.java,7\b\7b9fe624cd31d8ed66468d3c45d0f0e54851adc8
 Q
 !src/main/java/dao/CompanyDAO.java,b\1\b157c83bf2f960139341ddc7bc23da6cf21396c4
+U
+%src/main/java/utils/ModelFactory.java,d\a\da9813ecbdc9a62a174382abd1b79b92cf46edc0
+R
+"src/main/java/utils/CSVReader.java,6\0\605155c920d7e2b1eefbe645859ec808c5bc8756
+[
++src/main/java/utils/FileReaderTemplate.java,3\5\35818110a21acc232971bd8f3bcdfe7f72dd8e79
+Q
+!src/main/java/dao/CompanyDao.java,4\f\4fe01b5b3bbea0348cfbf3a662456d50b2f7a192
+S
+#src/main/java/utils/FileReader.java,4\7\474df5c1d6f4877d6996bc1e3d27cc9b47fe019d

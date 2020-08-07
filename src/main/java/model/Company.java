@@ -6,14 +6,42 @@ public class Company {
     private int id;
     private String name;
     private LocalDate foundationDate;
-    private String capital;
+    private long capital;
     private String country;
     private int headquarterId;
 
-    public Company() {
+    public Company(CompanyBuilder builder) {
+        this.id = builder.id;
+        this.name = builder.name;
+        this.foundationDate = builder.foundationDate;
+        this.capital = builder.capital;
+        this.country = builder.country;
+        this.headquarterId = builder.headquarterId;
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getFoundationDate() {
+        return foundationDate;
+    }
+
+    public long getCapital() {
+        return capital;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public int getHeadquarterId() {
+        return headquarterId;
+    }
 
     @Override
     public String toString() {
@@ -25,5 +53,47 @@ public class Company {
                 ", country='" + country + '\'' +
                 ", headquarterId=" + headquarterId +
                 '}';
+    }
+
+    public static class CompanyBuilder {
+        private int id;
+        private String name;
+        private LocalDate foundationDate;
+        private long capital;
+        private String country;
+        private int headquarterId;
+
+        public CompanyBuilder(int id) {
+            this.id = id;
+        }
+
+        public CompanyBuilder setName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public CompanyBuilder setFoundationDate(LocalDate foundationDate) {
+            this.foundationDate = foundationDate;
+            return this;
+        }
+
+        public CompanyBuilder setCapital(long capital) {
+            this.capital = capital;
+            return this;
+        }
+
+        public CompanyBuilder setCountry(String country) {
+            this.country = country;
+            return this;
+        }
+
+        public CompanyBuilder setHeadquarterId(int headquarterId) {
+            this.headquarterId = headquarterId;
+            return this;
+        }
+
+        public Company build() {
+            return new Company(this);
+        }
     }
 }

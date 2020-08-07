@@ -1,30 +1,42 @@
 package service;
 
-import dao.CompanyDAO;
+import dao.CompanyDao;
 import model.Company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CompanyService {
-    private List<Company> companies;
-    private CompanyDAO companyDAO;
+    List<Company> companies;
+    CompanyDao companyDao;
 
-    public CompanyService(List<Company> companies) {
-        this.companies = new ArrayList<>();
-        this.companyDAO = new CompanyDAO();
+    public CompanyService(String stringPath) {
+        companyDao = new CompanyDao();
+        this.companies = companyDao.readFile(stringPath);
+
+        companyDao.readData(stringPath);
     }
 
-    public List<Company> readFile(String stringPath){
-        Path filePath = Paths.get(stringPath);
-        BufferedReader reader = companyDAO.readFile(filePath);
-
-
-        return null;
+    public List<Company> getCompanies() {
+        return companies;
     }
+
+    public long getTotalCapitalByCountry(String country) {
+        long totalCapital = 0;
+
+        totalCapital = this.companies.stream()
+                .filter(c -> c.getCountry().equalsIgnoreCase("CH"))
+                .collect(Collectors.summingLong(Company::getCapital));
+
+        return totalCapital;
+    }
+
+    public void printCompaniesNameByCountry() {
+        this.companies.stream()
+                .filter(c -> c.getCountry().equalsIgnoreCase("CH"))
+                .sorted(Comparator.comparing(Company::getCapital).reversed())
+                .forEach(c -> System.out.println("||" + c.getName()));
+    }
+
 }
