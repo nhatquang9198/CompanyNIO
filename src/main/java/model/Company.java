@@ -1,11 +1,9 @@
 package model;
 
-import java.time.LocalDate;
-
 public class Company {
     private int id;
     private String name;
-    private LocalDate foundationDate;
+    private String foundationDate;
     private long capital;
     private String country;
     private int headquarterId;
@@ -27,7 +25,7 @@ public class Company {
         return name;
     }
 
-    public LocalDate getFoundationDate() {
+    public String getFoundationDate() {
         return foundationDate;
     }
 
@@ -58,7 +56,7 @@ public class Company {
     public static class CompanyBuilder {
         private int id;
         private String name;
-        private LocalDate foundationDate;
+        private String foundationDate;
         private long capital;
         private String country;
         private int headquarterId;
@@ -72,7 +70,7 @@ public class Company {
             return this;
         }
 
-        public CompanyBuilder setFoundationDate(LocalDate foundationDate) {
+        public CompanyBuilder setFoundationDate(String foundationDate) {
             this.foundationDate = foundationDate;
             return this;
         }
