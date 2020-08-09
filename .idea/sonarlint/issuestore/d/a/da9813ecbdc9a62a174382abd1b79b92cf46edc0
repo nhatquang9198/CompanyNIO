@@ -1,6 +1,5 @@
 
-
-java:S1488
-"_Immediately return this expression instead of assigning it to the temporary variable "company".(¤­õÙüÿÿÿÿ8Çşş¶¼.
 \
-java:S1118":Add a private constructor to hide the implicit public one.(èš÷´ÿÿÿÿÿ8åÚª¹¼.
+java:S1118":Add a private constructor to hide the implicit public one.(èš÷´ÿÿÿÿÿ8åÚª¹¼.
+
+java:S1488"_Immediately return this expression instead of assigning it to the temporary variable "company".(¤­õÙüÿÿÿÿ8Çşş¶¼.

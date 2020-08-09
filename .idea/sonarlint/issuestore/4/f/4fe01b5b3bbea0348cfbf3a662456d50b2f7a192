@@ -1,30 +1,0 @@
-
-T
-java:S1481!"2Remove this unused "headquarterId" local variable.(ãëÂÉùÿÿÿÿ8ÜŸÎÂ¼.
-R
-java:S18543"5Remove this useless assignment to local variable "s".(áÛÊŒ8ÑÆÆÄ¼.
-X
-java:S1144";Remove this unused private "convertStringToCompany" method.(Õ–îƒ8˜óÀ¼.
-]	java:S1252"<This block of commented-out lines of code should be removed.(Ú°·Õùÿÿÿÿ8ïÂÄ¼.
-I
-java:S1481"'Remove this unused "id" local variable.(ùç–—ûÿÿÿÿ8ÜŸÎÂ¼.
-]	java:S125%"<This block of commented-out lines of code should be removed.(öíßºıÿÿÿÿ8ÌºÜÁ¼.
-I
-java:S1481 ",Remove this unused "country" local variable.(ÌïŠ8ÜŸÎÂ¼.
-C
-java:S14813"&Remove this unused "s" local variable.(áÛÊŒ8ÑÆÆÄ¼.
-n
-java:S2677I"LUse or store the value returned from "readLine" instead of throwing it away.(£­—âÿÿÿÿÿ8ÇáåÁ¼.
-I
-java:S1481",Remove this unused "capital" local variable.(Şª·›8ÜŸÎÂ¼.
-{
-java:S1488@"^Immediately return this expression instead of assigning it to the temporary variable "reader".(€èíù8ÇáåÁ¼.
-F
-java:S1481")Remove this unused "name" local variable.(Ê§…ñ8ÜŸÎÂ¼.
-X	java:S125#"<This block of commented-out lines of code should be removed.(ºÃËÇ8ÌºÜÁ¼.
-P
-java:S1481"3Remove this unused "foundationDate" local variable.(ê’÷8ÜŸÎÂ¼.
-E
-java:S1172"(Remove this unused method parameter "s".(Õ–îƒ8ÌºÜÁ¼.
-W
-java:S1141_"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÇáåÁ¼.
