@@ -1,5 +1,16 @@
 
+<<<<<<< HEAD
 U	java:S106"9Replace this use of System.out or System.err by a logger.(°Ö©†8”’‰¹¼.
 X	java:S125"<This block of commented-out lines of code should be removed.(¢³Ÿú8ËúÑÄ¼.
 U	java:S106"9Replace this use of System.out or System.err by a logger.(ðû´é8½®¹¼.
 U	java:S106"9Replace this use of System.out or System.err by a logger.(ÔŒëÝ8š¸­¹¼.
+=======
+U	java:S106"9Replace this use of System.out or System.err by a logger.(°Ö©†8êÞ²¢½.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¯¾ì§üÿÿÿÿ8êÞ²¢½.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬éµôùÿÿÿÿ8êÞ²¢½.
+]	java:S125"<This block of commented-out lines of code should be removed.(úÞ¼þÿÿÿÿ8ÐÚŸ£½.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ðä¿”þÿÿÿÿ8à¶¢£½.
+X	java:S125"<This block of commented-out lines of code should be removed.(¢³Ÿú8ËúÑÄ¼.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Áê óøÿÿÿÿ8¯Ä’£½.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(éº¦þÿÿÿÿ8Âù££½.
+>>>>>>> 565e3ce2f9980644c172e2d2012337f45f57d4a2

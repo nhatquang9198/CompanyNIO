@@ -13,9 +13,7 @@ public class CompanyService {
 
     public CompanyService(String stringPath) {
         companyDao = new CompanyDao();
-        this.companies = companyDao.readFile(stringPath);
-
-        companyDao.readData(stringPath);
+        companies = companyDao.readData(stringPath);
     }
 
     public List<Company> getCompanies() {
@@ -26,17 +24,21 @@ public class CompanyService {
         long totalCapital = 0;
 
         totalCapital = this.companies.stream()
-                .filter(c -> c.getCountry().equalsIgnoreCase("CH"))
+                .filter(c -> c.getCountry().equalsIgnoreCase(country))
                 .collect(Collectors.summingLong(Company::getCapital));
 
         return totalCapital;
     }
 
-    public void printCompaniesNameByCountry() {
+    public void printCompaniesNameByCountry(String country) {
         this.companies.stream()
-                .filter(c -> c.getCountry().equalsIgnoreCase("CH"))
+                .filter(c -> c.getCountry().equalsIgnoreCase(country))
                 .sorted(Comparator.comparing(Company::getCapital).reversed())
                 .forEach(c -> System.out.println("||" + c.getName()));
+    }
+
+    public void watchForFile(String stringPath) {
+        this.companies = companyDao.watchForFile(stringPath);
     }
 
 }
